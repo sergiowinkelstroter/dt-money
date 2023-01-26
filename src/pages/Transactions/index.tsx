@@ -16,7 +16,7 @@ export interface Transaction {
 }
 
 export const Transactions = () => {
-  const { data } = useContext(TransactionsContext);
+  const { transactions } = useContext(TransactionsContext);
 
   return (
     <>
@@ -26,7 +26,7 @@ export const Transactions = () => {
         <SearchForm />
         <C.TransactionsTable>
           <tbody>
-            {data?.map((transaction) => {
+            {transactions.map((transaction) => {
               return (
                 <tr key={transaction.id}>
                   <td width="50%">{transaction.description}</td>

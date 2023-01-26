@@ -9,12 +9,28 @@
       "createdAt": "2023-01-24T23:18:54.256Z"
     },
     {
-      "id": 2,
+      "description": "Desenvolvimento de app",
+      "category": "Venda",
+      "price": 10000,
+      "type": "income",
+      "createdAt": "2023-01-26T00:19:10.348Z",
+      "id": 3
+    },
+    {
       "description": "Lanche",
-      "type": "outcome",
       "category": "Alimentacao",
-      "price": 30,
-      "createdAt": "2023-02-24T23:55:10.256Z"
+      "price": 20,
+      "type": "outcome",
+      "createdAt": "2023-01-26T00:23:16.764Z",
+      "id": 4
+    },
+    {
+      "description": "Academia",
+      "category": "Exercicios",
+      "price": 150,
+      "type": "outcome",
+      "createdAt": "2023-01-26T00:32:19.392Z",
+      "id": 5
     }
   ]
 }

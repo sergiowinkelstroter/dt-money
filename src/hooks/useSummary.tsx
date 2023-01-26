@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { TransactionsContext } from "../context/TransactionsContext";
 
 export const useSummary = () => {
-  const { data } = useContext(TransactionsContext);
+  const { transactions } = useContext(TransactionsContext);
 
-  const summary = data?.reduce(
+  const summary = transactions.reduce(
     (acc, transaction) => {
       if (transaction.type === "income") {
         acc.icome += transaction.price;
