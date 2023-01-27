@@ -31,6 +31,22 @@
       "type": "outcome",
       "createdAt": "2023-01-26T00:32:19.392Z",
       "id": 5
+    },
+    {
+      "description": "Desenvolvimento de app mobile",
+      "category": "Venda",
+      "price": 3400,
+      "type": "income",
+      "createdAt": "2023-01-26T23:43:09.915Z",
+      "id": 6
+    },
+    {
+      "description": "Escola",
+      "category": "Estudo",
+      "price": 950,
+      "type": "outcome",
+      "createdAt": "2023-01-27T00:09:30.182Z",
+      "id": 7
     }
   ]
 }

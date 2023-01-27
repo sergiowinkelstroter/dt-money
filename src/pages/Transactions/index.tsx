@@ -3,8 +3,8 @@ import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import * as C from "./styles";
 import { dateFormatter, priceFormatted } from "../../utils/Formatter";
-import { useContext } from "react";
 import { TransactionsContext } from "../../context/TransactionsContext";
+import { useContextSelector } from "use-context-selector";
 
 export interface Transaction {
   id: number;
@@ -16,7 +16,9 @@ export interface Transaction {
 }
 
 export const Transactions = () => {
-  const { transactions } = useContext(TransactionsContext);
+  const transactions = useContextSelector(TransactionsContext, (context) => {
+    return context.transactions;
+  });
 
   return (
     <>
